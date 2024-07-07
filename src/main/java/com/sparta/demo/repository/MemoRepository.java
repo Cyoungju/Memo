@@ -3,11 +3,13 @@ package com.sparta.demo.repository;
 import com.sparta.demo.dto.MemoRequestDto;
 import com.sparta.demo.dto.MemoResponseDto;
 import com.sparta.demo.entity.Memo;
+import jakarta.persistence.EntityManager;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
