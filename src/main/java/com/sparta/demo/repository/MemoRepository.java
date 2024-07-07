@@ -11,4 +11,6 @@ public interface MemoRepository extends JpaRepository<Memo, Long> {
     List<Memo> findAllByOrderByModifiedAtDesc();
     //ModifiedAt 정렬해서 내림차순으로 불러오기
 
+    List<Memo> findAllByContentsContainsOrderByModifiedAtDesc(String keyword);
+
 }
