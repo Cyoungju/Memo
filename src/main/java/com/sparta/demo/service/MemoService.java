@@ -4,8 +4,6 @@ import com.sparta.demo.dto.MemoRequestDto;
 import com.sparta.demo.dto.MemoResponseDto;
 import com.sparta.demo.entity.Memo;
 import com.sparta.demo.repository.MemoRepository;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
